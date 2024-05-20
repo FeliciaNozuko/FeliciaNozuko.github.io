@@ -3,40 +3,63 @@
   <head>
     <style>
       .forTheAboutMe {
-        background-color: pink;
+        text-align: center;
+        font-style: italic;
+        background-color: bisque;
       }
 
       .forTopPart {
-        background-color: beige;
+        background-color: pink;
       }
 
       .imageAdjusments {
         width: 120px;
+        border-radius: 45%;
+      }
+
+      #header h1 {
+        text-align: center;
+      }
+      #image {
+        text-align: center;
+      }
+
+      .leftSide {
+        width: 50%;
+        padding-left: 15px;
       }
     </style>
-    <h1 align="center" class="forTopPart" ;>Felicia Nkohla</h1>
-    <h2>
+    <div id="header">
+      <h1 class="forTopPart" ;>Felicia Nkohla</h1>
+    </div>
+
+    <div id="image">
       <img
-        align="center"
-        ;
+        id="image"
         class="imageAdjusments"
         ;
         src="C:\Users\felic\OneDrive\Desktop\Umuzi\Image\Face.jpg"
       />
-    </h2>
+    </div>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simple Website of Felicia</title>
   </head>
-  <body class="forTheAboutMe" ;>
-    <ul class="forTopPart" ;>
+  <body class="forTopPart">
+    <h3 class="forTheAboutMe">
+      About Me
+      <p>
+        I am currently on a path to being a sofware developer. I love dealing
+        with complex problems and finding solutions that society faces.
+      </p>
+    </h3>
+    <ul>
       <li>Education:</li>
 
       <li>Interests:</li>
 
       <li>Skills:</li>
     </ul>
-
-    <h3></h3>
   </body>
 </html>
