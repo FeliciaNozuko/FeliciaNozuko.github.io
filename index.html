@@ -3,14 +3,31 @@
   <head>
     <base target="_blank" />
     <style>
+      body {
+        background-color: rgb(223, 186, 123);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
       .forTheAboutMe {
         text-align: center;
         font-style: italic;
         background-color: pink;
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
       }
 
       .forTopPart {
         background-color: rgb(223, 186, 123);
+      }
+
+      #header,
+      .content,
+      footer {
+        text-align: center;
+        background-color: rgb(223, 186, 123);
+        padding: 20px;
       }
 
       .imageAdjusments {
@@ -18,21 +35,10 @@
         border-radius: 45%;
       }
 
-      #header h1 {
-        text-align: center;
-      }
       #image {
         text-align: center;
       }
 
-      .leftSide {
-        text-align: center;
-        background-color: rgb(223, 186, 123);
-      }
-      .rightSide {
-        text-align: center;
-        background-color: rgb(223, 186, 123);
-      }
       .languageImages {
         width: 10%;
       }
@@ -41,101 +47,80 @@
         font-style: italic;
         text-align: center;
       }
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 10px 0;
+      }
+      .content p,
+      .forTheAboutMe p {
+        margin: 10px 0;
+      }
     </style>
-    <div id="header">
-      <h1 class="forTopPart">Felicia Nkohla</h1>
-    </div>
-
-    <div id="image">
-      <img
-        id="image"
-        class="imageAdjusments"
-        src="https://i.postimg.cc/CM7HdW61/Face.jpg"
-      />
-    </div>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Website of Felicia</title>
+    <h1><title>Simple Website of Felicia</title></h1>
   </head>
-  <body class="forTopPart">
-    <h3 class="forTheAboutMe">
-      About Me
+  <body>
+    <div id="header">
+      <h1>Felicia Nkohla</h1>
+    </div>
+    <div id="image" class="content">
+      <img
+        class="imageAdjusments"
+        src="https://i.postimg.cc/CM7HdW61/Face.jpg"
+        alt="Felicia's photo"
+      />
+    </div>
+    <div class="forTheAboutMe">
+      <h2>About Me</h2>
       <p>
         I am an aspiring software developer with a passion for tackling complex
         problems and developing solutions that address societal challenges.
       </p>
-    </h3>
-    <h4>
-      <div class="rightSide">
-        <p><u> Education </u></p>
-        <p>University of Cape Town (BBusSci Analytics)</p>
-        <p>Umuzi Academy (Web Development)</p>
+    </div>
 
-        <p><u> Interests </u></p>
+    <div class="content">
+      <h2>Education</h2>
+      <p>University of Cape Town (BBusSci Analytics)</p>
+      <p>Umuzi Academy (Web Development)</p>
+    </div>
 
-        <p>Sport: Tennis and Formula1</p>
-        <p>Reading: Fiction, Self Help books and Audiobooks</p>
-        <p>Learning: I love Coding, Problem Solving and Art</p>
+    <div class="content">
+      <h2>Interests</h2>
+      <p>Sport: Tennis and Formula1</p>
+      <p>Reading: Fiction, Self Help books and Audiobooks</p>
+      <p>Learning: I love Coding, Problem Solving and Art</p>
+    </div>
 
-        <p><u> Projects </u></p>
-        <p class="forProjects">coming soon...</p>
-        <p class="rightSide">
-          For now, here is my
-          <a
-            href="https://drive.google.com/file/d/1MfoEqili7cZ0k93McgidcTxfwFk_nExx/view?usp=sharing"
-          >
-            CV
-          </a>
-        </p>
+    <div class="content">
+      <h2>Projects</h2>
+      <p class="forProjects">coming soon...</p>
+      <p>
+        For now, here is my
+        <a
+          href="https://drive.google.com/file/d/1MfoEqili7cZ0k93McgidcTxfwFk_nExx/view?usp=sharing"
+        >
+          CV
+        </a>
+      </p>
+    </div>
 
-        <p><u> Skills </u></p>
-        <img
-          class="languageImages"
-          src="https://global.discourse-cdn.com/sitepoint/original/3X/b/5/b59a78e2ed76c705f3c0dcb300f3f222aefdcd99.png"
-        />
-      </div>
-    </h4>
+    <div class="content">
+      <h2>Skills</h2>
+      <img
+        class="languageImages"
+        src="https://global.discourse-cdn.com/sitepoint/original/3X/b/5/b59a78e2ed76c705f3c0dcb300f3f222aefdcd99.png"
+        alt="Programing languages"
+      />
+    </div>
 
     <footer>
-      <div class="rightSide">
-        <p><u> Contact me </u></p>
-        <p></p>
-        <form action="#" name="contact_form">
-          <label for="name">Full Name: </label>
-          <input name="name" type="text" required placeholder="Name Surname" />
-          <br />
-
-          <label for="company"> Company Name: </label>
-          <input
-            company="company"
-            type="text"
-            required
-            placeholder="Enter Your Company Name"
-          />
-          <br />
-
-          <label for="email"> Email address: </label>
-          <input
-            email="email"
-            type="text"
-            required
-            placeholder="Enter Your Email"
-          />
-
-          <br />
-
-          <label for="message"> Message: </label>
-          <input
-            message="message"
-            type="text"
-            required
-            placeholder="Write a Message..."
-            style="height: 25px"
-          />
-          <br />
-          <input type="submit" value="Submit" />
-        </form>
+      <div class="content">
+        <h2>Contact me</h2>
+        <p>You can email me <a href="mailto:nkohlafelly@gmail.com">here</a></p>
       </div>
     </footer>
   </body>
