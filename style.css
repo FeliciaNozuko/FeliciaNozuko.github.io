@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(223, 186, 123);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.forTheAboutMe {
+  text-align: center;
+  font-style: italic;
+  background-color: pink;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.forTopPart {
+  background-color: rgb(223, 186, 123);
+}
+
+#header,
+.content,
+footer {
+  text-align: center;
+  background-color: rgb(223, 186, 123);
+  padding: 20px;
+}
+
+.imageAdjusments {
+  width: 120px;
+  border-radius: 45%;
+}
+
+#image {
+  text-align: center;
+}
+
+.languageImages {
+  width: 10%;
+}
+
+.forProjects {
+  font-style: italic;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 10px 0;
+}
+.content p,
+.forTheAboutMe p {
+  margin: 10px 0;
+}
