@@ -52,3 +52,22 @@ h4 {
 .forTheAboutMe p {
   margin: 10px 0;
 }
+.navigation {
+  background-color: pink;
+  overflow: hidden;
+}
+.navigation a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: solid;
+  font-size: 17px;
+}
+.navigation a:hover {
+  background-color: azure;
+}
+.navigation a.active {
+  background-color: aquamarine;
+  color: black;
+}
