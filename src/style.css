@@ -67,7 +67,3 @@ h4 {
 .navigation a:hover {
   background-color: azure;
 }
-.navigation a.active {
-  background-color: orangered;
-  color: black;
-}
