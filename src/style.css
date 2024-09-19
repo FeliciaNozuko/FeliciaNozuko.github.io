@@ -1,27 +1,27 @@
 body {
-  background-color: rgb(223, 186, 123);
+  background-color: whitesmoke;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
-.forTheAboutMe {
+/* .forTheAboutMe {
   text-align: center;
   font-style: italic;
   background-color: pink;
   padding: 20px;
   margin: 20px auto;
   width: 80%;
-}
+} */
 
 .forTopPart {
-  background-color: rgb(223, 186, 123);
+  background-color: whitesmoke;
 }
 
 #header,
 .content,
 footer {
   text-align: center;
-  background-color: rgb(223, 186, 123);
+  background-color: whitesmoke;
   padding: 20px;
 }
 
@@ -66,4 +66,58 @@ h4 {
 }
 .navigation a:hover {
   background-color: azure;
+}
+.container {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1fr 3fr 3fr 3fr 3fr 1fr);
+  grid-template-areas:
+    "a a"
+    "e d"
+    "i d"
+    "p d"
+    "s d"
+    "c c c c";
+}
+
+.about {
+  grid-area: a;
+  text-align: center;
+  font-style: italic;
+  background-color: pink;
+  /* padding: 20px; */
+  /* margin: 20px auto;
+  width: 80%; */
+}
+.container > div {
+  background-color: orange;
+}
+
+.container > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.education {
+  grid-area: e;
+}
+
+.interest {
+  grid-area: i;
+}
+
+.project {
+  grid-area: p;
+}
+
+.skills {
+  grid-area: s;
+}
+
+.content {
+  grid-area: d;
+}
+
+.contact {
+  grid-area: c;
 }
