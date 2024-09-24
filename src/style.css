@@ -106,3 +106,8 @@ html {
   font-style: italic;
   text-align: center;
 }
+
+.imageForGithub {
+  width: 5%;
+  height: 10%;
+}
