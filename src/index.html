@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base target="_blank" />
+    <base target="_self" />
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <h1><title>Simple Website of Felicia</title></h1>
-    <div class="navigation">
-      <a class="active" href="#contactme">Contact Me</a>
-      <a href="#education">Education</a>
-      <a href="#interests">Interests</a>
-      <a href="#projects">Projects</a>
-    </div>
+    <title>Simple Website of Felicia</title>
   </head>
   <body>
-    <section>
-      <div id="header">
-        <h1>Felicia Nkohla</h1>
+    <header id="header">
+      <div class="navigation">
+        <a href="#contactme">Contact Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Interests</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
       </div>
-    </section>
+      <h1>Felicia Nkohla</h1>
+    </header>
     <figure>
-      <div id="image" class="content">
+      <div class="content">
         <img
           class="imageAdjusments"
           src="images/websitepicture.jpg"
@@ -29,76 +28,53 @@
       </div>
     </figure>
     <div class="container">
-      <section>
-        <div class="about">
-          <!-- <div class="forTheAboutMe"> -->
-          <h2>About Me</h2>
-          <p>
-            I am an aspiring software developer with a passion for tackling
-            complex problems and developing solutions that address societal
-            challenges.
-          </p>
-          <!-- </div> -->
-        </div>
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+          I am an aspiring software developer with a passion for tackling
+          complex problems and developing solutions that address societal
+          challenges.
+        </p>
       </section>
 
-      <section>
-        <!-- <div class="education"> -->
-        <div class="content">
-          <div class="education">
-            <h2>Education</h2>
-            <p>University of Cape Town (BBusSci Analytics)</p>
-            <p>Umuzi Academy (Web Development)</p>
-          </div>
-        </div>
-        <!-- </div> -->
+      <section id="education" class="education">
+        <h2>Education</h2>
+        <p>University of Cape Town (BBusSci Analytics)</p>
+        <p>Umuzi Academy (Web Development)</p>
       </section>
 
-      <section>
-        <div class="content">
-          <h2>Interests</h2>
-          <p>Sport: Tennis and Formula1</p>
-          <p>Reading: Fiction, Self Help books and Audiobooks</p>
-          <p>Learning: I love Coding, Problem Solving and Art</p>
-        </div>
-        <!-- <aside>
-        <img class="Tennis" src="images/tennispic.jpg" alt="Felicia Tennis" />
-      </aside> -->
+      <section id="Interests" class="interest">
+        <h2>Interests</h2>
+        <p>Sport: Tennis and Formula1</p>
+        <p>Reading: Fiction, Self Help books and Audiobooks</p>
+        <p>Learning: I love Coding, Problem Solving and Art</p>
       </section>
 
-      <section>
-        <div class="content">
-          <h2>Projects</h2>
-          <p class="forProjects">coming soon...</p>
-          <p>
-            For now, here is my
-            <a
-              href="https://drive.google.com/file/d/1MfoEqili7cZ0k93McgidcTxfwFk_nExx/view?usp=sharing"
-            >
-              CV
-            </a>
-          </p>
-        </div>
+      <section id="projects" class="project">
+        <h2>Projects</h2>
+        <p class="forProjects">coming soon...</p>
+        <p>
+          For now, here is my
+          <a
+            href="https://drive.google.com/file/d/1MfoEqili7cZ0k93McgidcTxfwFk_nExx/view?usp=sharing"
+          >
+            CV
+          </a>
+        </p>
       </section>
 
-      <div class="content">
-        <div class="skills">
-          <h2>Skills</h2>
-          <img
-            class="languageImages"
-            src="https://global.discourse-cdn.com/sitepoint/original/3X/b/5/b59a78e2ed76c705f3c0dcb300f3f222aefdcd99.png"
-            alt="Programing languages"
-          />
-        </div>
-      </div>
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <img
+          class="languageImages"
+          src="https://global.discourse-cdn.com/sitepoint/original/3X/b/5/b59a78e2ed76c705f3c0dcb300f3f222aefdcd99.png"
+          alt="Programing languages"
+        />
+      </section>
 
-      <footer>
-        <div class="content">
-          <h2>Contact me</h2>
-          <p>
-            You can email me <a href="mailto:nkohlafelly@gmail.com">here</a>
-          </p>
-        </div>
+      <footer class="contact" id="contactme">
+        <h2>Contact me</h2>
+        <p>You can email me <a href="mailto:nkohlafelly@gmail.com">here</a></p>
       </footer>
     </div>
   </body>

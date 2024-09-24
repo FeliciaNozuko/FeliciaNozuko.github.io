@@ -4,24 +4,11 @@ body {
   margin: 0;
   padding: 0;
 }
-/* .forTheAboutMe {
-  text-align: center;
-  font-style: italic;
-  background-color: pink;
-  padding: 20px;
-  margin: 20px auto;
-  width: 80%;
-} */
-
-.forTopPart {
-  background-color: whitesmoke;
-}
 
 #header,
 .content,
 footer {
   text-align: center;
-  background-color: whitesmoke;
   padding: 20px;
 }
 
@@ -30,94 +17,99 @@ footer {
   border-radius: 45%;
 }
 
-#image {
-  text-align: center;
-}
-
-.languageImages {
-  width: 10%;
-}
-
-.forProjects {
-  font-style: italic;
-  text-align: center;
-}
-h1,
-h2,
-h3,
-h4 {
-  margin: 10px 0;
-}
-.content p,
-.forTheAboutMe p {
-  margin: 10px 0;
-}
 .navigation {
   background-color: pink;
   overflow: hidden;
 }
+
 .navigation a {
   float: right;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: solid;
+  text-decoration: none;
   font-size: 17px;
 }
 .navigation a:hover {
   background-color: azure;
 }
+
 .container {
   display: grid;
   grid-gap: 3px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1fr 3fr 3fr 3fr 3fr 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
   grid-template-areas:
     "a a"
-    "e d"
-    "i d"
-    "p d"
-    "s d"
-    "c c c c";
+    "e i"
+    "p s"
+    "d d";
+
+  grid-template-rows: auto;
 }
 
 .about {
   grid-area: a;
   text-align: center;
   font-style: italic;
+  margin: 20px auto;
+  width: 80%;
   background-color: pink;
-  /* padding: 20px; */
-  /* margin: 20px auto;
-  width: 80%; */
-}
-.container > div {
-  background-color: orange;
-}
-
-.container > div:nth-child(3n) {
-  background-color: #88d8b0;
 }
 
 .education {
   grid-area: e;
+  text-align: center;
 }
 
 .interest {
   grid-area: i;
+  text-align: center;
 }
 
 .project {
   grid-area: p;
+  text-align: center;
 }
 
 .skills {
   grid-area: s;
+  text-align: center;
 }
 
-.content {
-  grid-area: d;
-}
+/* .contact {
+  grid-area: c;
+  text-align: center;
+  background-color: lightgray;
+  color: black;
+} */
 
 .contact {
-  grid-area: c;
+  grid-area: d;
+  text-align: center;
+  background-color: pink;
+  padding: 0;
+}
+
+.full-grid-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+#image {
+  text-align: center;
+}
+
+.languageImages {
+  width: 30%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.forProjects {
+  font-style: italic;
+  text-align: center;
 }
