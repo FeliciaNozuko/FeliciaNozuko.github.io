@@ -20,11 +20,14 @@ footer {
 .navigation {
   background-color: pink;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navigation a {
   float: right;
-  color: white;
+  color: red;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -110,4 +113,16 @@ html {
 .imageForGithub {
   width: 5%;
   height: 10%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "a"
+      "e"
+      "i"
+      "p"
+      "s"
+      "d";
+  }
 }
