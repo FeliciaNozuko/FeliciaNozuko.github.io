@@ -22,7 +22,9 @@ footer {
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 98%;
+  left: 0;
+  width: 99%;
+  padding: 0;
 }
 
 .navigation a {
@@ -124,6 +126,5 @@ html {
       "p"
       "s"
       "d";
-    width: 98%;
   }
 }
