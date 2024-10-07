@@ -118,6 +118,7 @@ html {
 .imageForGithub {
   width: 5%;
   height: 10%;
+  background-color: pink;
 }
 
 @media (max-width: 768px) {
