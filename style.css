@@ -138,3 +138,15 @@ html {
     width: 5%;
   }
 }
+
+@media (max-width: 1024px) {
+  .navigation {
+    display: flex;
+    width: 100%;
+  }
+
+  .navigation a {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
